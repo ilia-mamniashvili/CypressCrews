@@ -1,4 +1,4 @@
-import { AddCrewElements } from '../crewElements/AddCrewElements.js';
+import { AddCrewElements } from '../../crewElements/AddCrewElements.js';
 
 describe('Add Crew', () => {
     it('should add a new crew member', () => {
@@ -10,8 +10,6 @@ describe('Add Crew', () => {
         const addCrewElements = new AddCrewElements();
 
         cy.wait(10000);
-        addCrewElements.CrewNavPage();
-        cy.wait(5000);
         addCrewElements.CrewsPage(); 
         addCrewElements.CrewAddButton();
         cy.CreateCrew();
